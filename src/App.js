@@ -16,6 +16,7 @@ import Student from "./pages/student/Student";
 import Questions from "./pages/questions/Questions";
 import AlertComp from "./services/alerts/AlertComp";
 import Trail from "./pages/trail/Trail";
+import Answers from "./pages/answers/Answers";
 
 function getTokenInfos() {
   const jsonToken = localStorage.getItem("token");
@@ -89,6 +90,7 @@ function Pages() {
         {renderLoggedRoute("/estudantes", Student)}
         {renderLoggedRoute("/perguntas", Questions)}
         {renderLoggedRoute("/trilha", Trail)}
+        {renderLoggedRoute("/respostas", Answers)}
         {renderRoute("/404", Page404)}
         <Redirect to={"/404"} />
       </Switch>

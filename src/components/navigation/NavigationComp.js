@@ -103,6 +103,8 @@ class NavigationComp extends Component {
             {!is_student &&this.renderLink("Perguntas", `/perguntas`, "fas fa-clipboard")}
             {/* Trilha */}
             {this.renderLink("Trilha", `/trilha`, "fas fa-map")}
+            {/* Respostas */}
+            {this.renderLink("Respostas", `/respostas`, "fas fa-clipboard-check")}
             {/* Sair */}
             <div className="navi-td">
               <Link
