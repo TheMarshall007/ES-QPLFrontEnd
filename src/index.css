@@ -11,3 +11,99 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:root {
+  --theme-background-color-white: #ffffff;
+  --theme-background-color-grey-light: #ededed;
+  --theme-background-color-grey-light-hover: #e4e4e4;
+  --theme-background-color-grey-light-1: #c5c5c5;
+  --theme-background-color-grey-light-2: #8c8c8c;
+
+  --theme-background-color-grey-medium: #4d4d4d;
+  --theme-background-color-grey-strong: #3e3e3e;
+
+  --theme-primary-color: #1ca2fb;
+  --theme-secondary-color: #95a5a6;
+  --theme-info-color: #7ebbe7;
+  --theme-success-color: #4fbd9c;
+  --theme-warning-color: #ffcc2f;
+  --theme-attention-color: #ff8800;
+  --theme-danger-color: #ff4444;
+
+  --progress-dark-grey: #9fabae;
+  --progress-ligth-grey: #dfe3e4;
+  --progress-green: #2ecc71;
+  --progress-blue: #075bbb;
+
+  --header-min-height: 5rem;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #8c8c8c;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: #8c8c8c40;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #8c8c8c60;
+  border-radius: 20px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.switch-group > .switch-handle {
+  background-color: var(--theme-background-color-white) !important;
+}
+
+.switch.btn > .switch-group > .switch-handle {
+  background-color: var(--theme-background-color-white) !important;
+}
+
+.switch.btn.disabled > .switch-group > span {
+  cursor: default;
+}
+
+.switch.btn.disabled > .switch-group > .switch-handle {
+  background-color: unset !important;
+}
+
+.modal-content {
+  background-clip: unset !important;
+  margin: 0 !important;
+  border: 1px solid var(--theme-background-color-grey-light-2) !important;
+}
+
+.modal-dialog {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-dialog.content-h-100 > .modal-content {
+  height: 100%;
+}
+
+.on-load-image {
+  transition: 0.2s;
+  opacity: 0;
+}
+
+#popover-basic {
+  z-index: 1040 !important;
+}
+
+@media (min-width: 1200px) {
+  .modal-xl {
+    max-width: 1140px !important;
+    min-width: 1140px !important;
+  }
+}

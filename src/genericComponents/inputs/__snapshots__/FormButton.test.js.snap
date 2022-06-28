@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`genericComponents / inputs / <FormButton /> should match snapshot 1`] = `
+<button
+  class="btn btn-primary"
+>
+  Testando Botão
+</button>
+`;

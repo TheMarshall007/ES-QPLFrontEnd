@@ -1,0 +1,38 @@
+.input-spinner {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
+.required-asterisk {
+  margin: 0;
+}
+
+.invalid-feedback.input-control-feedback {
+  display: block;
+}
+
+.input-password_disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.form-check.required .form-check-label:after {
+  content: " *";
+  color: red;
+}
+
+.is-required {
+  color: red;
+}
+
+.form-input-capitalize {
+  text-transform: capitalize;
+}
+
+.radio-options.col {
+  flex-shrink: 0;
+  flex-basis: auto;
+  width: auto;
+
+}

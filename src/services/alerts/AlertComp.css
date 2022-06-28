@@ -1,0 +1,33 @@
+:root {
+  --idx: 1;
+}
+
+div.alert-comp-alert {
+  z-index: 99999;
+  width: 40%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+div.alert-comp-alert > div {
+  animation: showAlert 0.2s forwards;
+}
+
+@media (max-width: 768px) {
+  div.alert-comp-alert {
+    width: 80%;
+  }
+}
+
+@keyframes showAlert {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

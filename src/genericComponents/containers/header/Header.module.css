@@ -1,0 +1,81 @@
+/* 6.5rem // desktop */
+/* 5.5rem // mobile */
+
+.header {
+  display: flex;
+  align-items: center;
+  min-height: calc(var(--header-min-height) + env(safe-area-inset-top));
+  padding: 0 1rem;
+  padding-top: env(safe-area-inset-top);
+  /* padding-top: 2rem; */
+  background-color: var(--theme-background-color-white);
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0px 0 1px rgb(10 10 10 / 2%);
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.content > * {
+  width: 100%;
+  align-self: center;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.breadcrumb > ol {
+  background-color: unset;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb > ol > li {
+  padding: 0 !important;
+}
+
+.breadcrumb > ol > li > a {
+  padding-right: 0.5rem !important;
+  padding-left: 0 !important;
+}
+
+input.searchBar {
+  max-width: 400px;
+  flex: 1;
+}
+
+.buttonsTitle {
+  margin-top: 0.5rem;
+  line-height: 2rem;
+  border-bottom: 1px solid #00000030;
+}
+@media (max-width: 991px) {
+  .header {
+    padding-left: 4rem;
+    padding-right: 1rem;
+  }
+
+  .header.notLogged {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 1399px) {
+  div.headerItems {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .overlayMenu {
+    display: none !important;
+  }
+}

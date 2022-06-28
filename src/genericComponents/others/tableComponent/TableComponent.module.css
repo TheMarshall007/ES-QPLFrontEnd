@@ -1,0 +1,71 @@
+.table {
+  width: calc(100% - 2px) !important;
+  animation: showing-table 0.4s;
+}
+
+.thClickable {
+  transition: 0.1s;
+  cursor: pointer !important;
+  white-space: nowrap;
+  padding-right: 1.5rem !important;
+}
+
+.thClickable:hover {
+  background-color: var(--theme-background-color-grey-light);
+}
+
+.th {
+  white-space: nowrap;
+  cursor: default;
+}
+
+.thIcon {
+  text-align: right !important;
+  display: block;
+}
+
+.trClickable {
+  transition: 0.1s;
+  cursor: pointer !important;
+  vertical-align: middle !important;
+}
+
+.trClickable:hover {
+  background-color: #00000015 !important;
+}
+
+.tr {
+  cursor: default;
+  vertical-align: middle !important;
+}
+
+.tr > td,
+.trClickable > td {
+  vertical-align: middle !important;
+}
+
+.tdClickable {
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.tr > .tdClickable:hover,
+.trClickable > .tdClickable:hover {
+  background-color: #00000010;
+}
+
+.emptyTable {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: var(--theme-background-color-grey-light);
+}
+
+@keyframes showing-table {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,12 @@
+.pag-col-page-blue {
+  cursor: pointer !important;
+  color: blue;
+  width: 1.4rem;
+  text-align: center;
+}
+
+.pag-col-page-black {
+  color: black;
+  width: 1.4rem;
+  text-align: center;
+}
